@@ -43,8 +43,13 @@ public class GetInstructorDetailsDemo
 			System.out.println("Done!");
 			
 		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 		finally
 		{
+			session.close();
 			factory.close();
 		}		
 	}
